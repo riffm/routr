@@ -516,9 +516,6 @@ class Configuration(object):
         if not directives:
             raise RouteConfigurationError()
 
-        if not directives:
-            raise RouteConfigurationError()
-
         method = directives.pop(0) if directives[0] in _http_methods else None
 
         if not directives:
